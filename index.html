@@ -1,67 +1,280 @@
-<!------------------------------------------------------------------------------
-Description: Home/main page for portfolio.
-
-Author: Dhara Patel
-------------------------------------------------------------------------------->
-
 <!DOCTYPE html>
+<html lang="en">
 
-<!-- top tab and settings-->
 <head>
-  <!-- page settings (aka meta)-->
+  <!-- meta -->
+  <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Dhara Patel</title>
+
+  <title>Dhara Patel's Portfolio</title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
 
-  <!-- style and css libraries -->
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Libraries CSS Files -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/hover/hover.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Responsive css -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png">
 </head>
 
 <body>
-  <!-- navbar -->
-  <nav id="navbar">
+
+  <!-- start section navbar -->
+  <nav id="main-nav">
     <div class="row">
       <div class="container">
 
-        <!-- hover triggered navbar -->
-        <div class="responsive"></div>
+        <div class="responsive"><img src="images/logo.png"></img></div>
 
-        <ul class="nav-list">
-          <li><a href="#home" class="smoothScroll">Home</a></li>
-          <li><a href="#about" class="smoothScroll">About Me</a></li>
+        <ul class="nav-menu list-unstyled">
+          <li><a href="#header" class="smoothScroll">Home</a></li>
+          <li><a href="#about" class="smoothScroll">About</a></li>
           <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-          <li><a href="#contact" class="smoothScroll">Contact Me</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact</a></li>
         </ul>
 
       </div>
     </div>
   </nav>
+  <!-- End section navbar -->
 
-  <!-- home -->
-  <div id="home"class="home">
+
+  <!-- start section header -->
+  <div id="header" class="home">
+
     <div class="container">
       <div class="header-content">
         <h1>Hello, </h1>
         <h1>I'm <span class="typed"></span></h1>
         <p>Electrical and Computer Engineer</p>
+
+        <div class="services-block">
+          <a href="https://www.linkedin.com/in/dhara-p/"><i class="ion-social-linkedin-outline"></i></a>
+          <a href="https://github.com/dharaspatel"><i class="ion-social-github-outline"></i></a>
+          <a href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ab0d28878-2966-45ad-b825-ef24bbb6a9dd"><i class="ion-ios-paper-outline"></i></a>
+
+        </div>
       </div>
+    </div>
+  </div>
+  <!-- End section header -->
 
-      <div class="out-links">
-        <a href="https://www.linkedin.com/in/dhara-p/"><i class="icon-linkedin"></i></a>
-        <a href="https://github.com/dharaspatel"><i class="icon-github"></i></a>
-        <a href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ab0d28878-2966-45ad-b825-ef24bbb6a9dd"><i class="icon-paper"></i></a>
 
+  <!-- start section about us -->
+  <div id="about" class="paddsection">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 ">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="images/me.jpg" class="img-responsive" alt="me">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="about-descr">
+            <p class="separator2">About Me</p>
+            <p class="separator">I am an electrical and computer engineer by major interested in the
+                                 advancement of space technology. Through my coursework, personal
+                                 projects, and internships, I have gained diverse experiences in
+                                 avionics, space-level design, and electrical applications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end section about us -->
+
+
+  <!-- start section portfolio -->
+  <div id="portfolio" class="text-center paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>My Portfolio</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+
+          <div class="portfolio-container">
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
+              <a class="popup-img" href="images/oem.jpg">
+                <img src="images/oem.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
+              <a class="popup-img" href="images/thinsat.jpg">
+                <img src="images/thinsat.jpg"  alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
+              <a class="popup-img" href="images/lessons.jpg">
+                <img src="images/lessons.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
+              <a class="popup-img" href="images/vandi.jpg">
+                <img src="images/vandi.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
+              <a class="popup-img" href="images/beamprint.jpg">
+                <img src="images/beamprint2.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <a class="popup-img" href="images/dancingPy.jpg">
+                <img src="images/dancingPy.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <a class="popup-img" href="images/heart.jpg">
+                <img src="images/heart.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <a class="popup-img" href="images/heart.jpg">
+                <img src="images/fisk.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <a class="popup-img" href="images/first.jpg">
+                <img src="images/first.jpg" alt="img">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section portfolio -->
+
+
+  <!-- start sectoion contact -->
+  <div id="contact" class="paddsection">
+    <div class="container">
+      <div class="contact-block1">
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="contact-contact">
+
+              <h2 class="mb-30">SEND ME A MESSAGE.</h2>
+
+              <ul class="contact-details">
+                <li><span>1000 Olin Way MB 156</span></li>
+                <li><span>Needham, MA, United States</span></li>
+                <li><span>dpatel1@olin.edu</span></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="row">
+
+                <div id="sendmessage">Your message has been sent. I'll get back to you as soon as I can!</div>
+                <div id="errormessage">Oops! Please reload and try again.</div>
+
+                <div class="col-lg-6">
+                  <div class="form-group contact-block1">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start sectoion contact -->
+
+
+  <!-- start section footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+          <p>...and yes. I designed this website.
       </div>
 
     </div>
   </div>
+  <!-- End section footer -->
 
-  <!-- about me -->
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/typed/typed.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
 
 </body>
-<div id="about" class="paddsection">
-  <div class="container">
 
-  </div>
-
-</div>
+</html>
