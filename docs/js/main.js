@@ -53,14 +53,14 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-//    if (scroll > 0 ) {
-	  $("#main-nav, #main-nav-subpage").slideDown(700);
-	  $("#main-nav-subpage").removeClass('subpage-nav');
-//    } else {
-//      $("#main-nav").slideUp(700);
-//      $("#main-nav-subpage").hide();
-//      $("#main-nav-subpage").addClass('subpage-nav');
-//    }
+    if (scroll > 200 ) {
+      $("#main-nav, #main-nav-subpage").slideDown(700);
+      $("#main-nav-subpage").removeClass('subpage-nav');
+    } else {
+      $("#main-nav").slideUp(700);
+      $("#main-nav-subpage").hide();
+      $("#main-nav-subpage").addClass('subpage-nav');
+    }
   });
 
   // ========================================================================= //
@@ -79,8 +79,8 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Dhara Patel.", "Engineer.", "Developer.", "Designer.", "Thinker."],
-      typeSpeed: 100,
+      strings: ["Dhara Patel.", "an engineer.", "a thinker.", "a developer.", "a designer."],
+      typeSpeed: 80,
       loop: true,
     });
   });
