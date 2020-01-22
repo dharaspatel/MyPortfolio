@@ -25,6 +25,7 @@ body {
   -o-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,12 +45,12 @@ h4 {
 
 a {
   color: #292929;
-  text-decoration: none !important;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
   -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0.1s;
+
 }
 
 a:hover {
@@ -57,12 +58,12 @@ a:hover {
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
   -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0.1s;
+  text-decoration: none !important;
 }
 
-a:hover, a:focus {
+a:hover, a:focus, a:active {
   color: #00A09F;
-  text-decoration: underline;
 }
 
 nav ul li a {
@@ -130,6 +131,8 @@ p {
   margin-bottom: 30px;
 }
 
+
+
 .form-control {
   background-color: transparent;
   border: 1px solid #999;
@@ -178,14 +181,21 @@ p {
 
 nav {
   position: fixed;
-  background: #fff;
   z-index: 1000;
-  width: 100%;
-  padding: 20px;
-  display: none;
-  -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
+  width: 50%;
+  display: block;
+  margin-right: 10px
+}
+
+.side_bar {
+    display: block;
+    width: 2px;
+    height: 16rem;
+    background-color: #292929;
+    left: 40px;
+    top: 40.2rem;
+    position: fixed;
+    margin-right: 10px;
 }
 
 .nav-menu {
@@ -195,27 +205,21 @@ nav {
   padding-top: 16px;
 }
 
-nav ul li {
-  float: left;
-  margin-right: 15px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  margin-left: 40px;
+nav ul li{
+  display: block;
+  margin-top: 10px;
 }
 
-nav ul li a {
-  padding: 2px 0 0 0;
+nav ul li a{
   position: relative;
   display: block;
-  font-size: 14px;
-  color: #999999;
+  font-size: 25px;
+  color: #292929;
   font-family: 'Poppins', helvetica;
-  font-weight: 500;
-  line-height: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
+  left: 10px;
+  background-color: #00A09F;
 }
+
 
 .logo {
   float: left;
@@ -332,6 +336,10 @@ nav ul li a {
   margin-bottom: 20px;
 }
 
+#about .about-descr img{
+  margin-top: 45px;
+  width: 20%;
+}
 /*-----------------------------------------------------------------------------------*/
 /*   Services
 /*-----------------------------------------------------------------------------------*/
@@ -358,7 +366,7 @@ nav ul li a {
   display: block;
 }
 
-#services .services-block h1 {
+.services-block h1 {
   font-size: 50px;
   font-style: bold;
   font-family: inherit;
@@ -366,7 +374,7 @@ nav ul li a {
   margin-bottom: 30px
 }
 
-#services .services-img img {
+.services-img img {
   width: 110%;
   margin-top: 10px;
   margin-left: -30px;
@@ -388,7 +396,7 @@ nav ul li a {
 
 
 .services-carousel  .owl-stage-outer {
-  overflow: hidden;
+  overflow: visible;
 }
 
 .services-carousel .owl-dots {
@@ -410,10 +418,6 @@ nav ul li a {
 
 .services-carousel .owl-dot.active {
   background-color: #00A09F;
-}
-
-.owl-nav {
-  display: none;
 }
 
 
